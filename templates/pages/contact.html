@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<div class="hb_breadcrumbs_wrapper">
+	<div class="hb_overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay="1s">
+				<div class="hb_pageheading">
+					<h3>contact</h3>
+					<ol class="breadcrumb">
+						<li><a href="index-2.html">Home</a></li>
+						<li class="active">contact</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="hb_contact_wrapper hb_toppadder75 hb_bottompadder80">
+	<div class="hb_contact_inner">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm1-12 col-xs-12">
+				<div class=" hb_mainheading hb_bottompadder40">
+					<h2>Herbal Pure</h2>
+					<h3>Get In Touch</h3>
+				</div>
+			</div>
+		</div>
+			<div class="row  justify-content-center">
+				<div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-offset-2 col-sm-10 col-xs-10 w-100 wow zoomIn">
+					<div class="hb_contact_form_div">
+						<div class="contact_head">
+							<h3>leave a Message Here</h3>
+							<p>Feel free to drop us a line below</p>
+						</div>
+							<div class="hb_contact_form">
+						<form>
+								<div class="form-group">
+									<input type="text" id="ur_name" name="first_name" class="form-control require" placeholder="Name*">
+								</div>
+								<div class="form-group">
+									<input type="text" id="ur_mail" name="email" class="form-control require" placeholder="Email*" data-valid="email" data-error="Email should be valid.">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control require" name="message" id="msg" placeholder="Message" rows="5"></textarea>
+								</div>
+								<div class="hb_btndiv">
+									<button class="hb_btn submitForm" type="button" id="">send</button>
+									<div class="response"></div>
+								</div>
+						</form>
+							</div>
+					</div>
+					
+					<div class="left-side">
+						<div class="">
+							<div class="hb_contact_info_div">
+								<h3>Contact Information</h3>
+								<div class="box">
+									<div class="icon">
+										<i class="flaticon-home"></i>
+									</div>
+									<div class="content">
+										<p>350 King Street</p>
+										<p>Khartoum - Sudan</p>
+									</div>
+								</div>
+								<div class="box">
+									<div class="icon">
+										<i class="flaticon-close-envelope"></i>
+									</div>
+									<div class="content">
+										<p>company@name.com</p>
+										<p>name@company.com</p>
+									</div>
+								</div>
+								<div class="box">
+									<div class="icon">
+										<i class="flaticon-telephone"></i>
+									</div>
+									<div class="content">
+										<p>+91 2563145236</p>
+										<p>+91 2563145236</p>
+									</div>
+								</div>
+								<div class="social">
+								<ul>
+									<li class="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li class="google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+								</ul>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hb_mapcontact_wrapper wow fadeIn">
+	<div id="real_map"></div>
+</div>
+{% endblock %}
