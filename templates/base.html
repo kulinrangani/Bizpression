@@ -4,11 +4,12 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+
     <title>Bizpression</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="">
-    <meta name="keywords" content="Health Coach, healthy food, loss weight, diet center, nutrition, weight loss, diet, Detoxification, wellness, healthy lifestyle, spa, cooking Class, consultations, Nutrition Consultant, diet center, nutrition website, nutrition blog, nutritional blog, Herbal Medicine">
+    <meta name="keywords"
+        content="Health Coach, healthy food, loss weight, diet center, nutrition, weight loss, diet, Detoxification, wellness, healthy lifestyle, spa, cooking Class, consultations, Nutrition Consultant, diet center, nutrition website, nutrition blog, nutritional blog, Herbal Medicine">
     <meta name="author" content="">
     <meta name="MobileOptimized" content="320">
     <!--srart theme style -->
@@ -18,36 +19,61 @@
     <link href="{% static 'css/fonts.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'css/swiper.min.css' %}" rel="stylesheet" type="text/css">
-	<link href="{% static 'js/plugins/owl/owl.carousel.css' %}" rel="stylesheet" type="text/css">
-	<link href="{% static 'js/plugins/jquery_ui/jquery-ui.css' %}" rel="stylesheet" type="text/css">
-	<link href="{% static 'js/plugins/magnific_popup/magnific-popup.css' %}" rel="stylesheet" type="text/css">
-	<link href="{% static 'js/plugins/revolution/css/settings.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'js/plugins/owl/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'js/plugins/jquery_ui/jquery-ui.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'js/plugins/magnific_popup/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'js/plugins/revolution/css/settings.css' %}" rel="stylesheet" type="text/css">
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
     <!-- end theme style -->
     <!-- favicon links -->
     <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
 </head>
-<body> 
+
+<body>
     <div id="hb_preloader_wrapper">
         <div id="hb_preloader_box">
             <div class="flower">
-            <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14"><path d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z"></path></svg>
-            <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14"><path d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z"></path></svg>
-            <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14"><path d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z"></path></svg>
-            <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14"><path d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z"></path></svg>
-            <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14"><path d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z"></path></svg>
-            <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14"><path d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z"></path></svg>
-          </div>
+                <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14">
+                    <path
+                        d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z">
+                    </path>
+                </svg>
+                <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14">
+                    <path
+                        d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z">
+                    </path>
+                </svg>
+                <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14">
+                    <path
+                        d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z">
+                    </path>
+                </svg>
+                <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14">
+                    <path
+                        d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z">
+                    </path>
+                </svg>
+                <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14">
+                    <path
+                        d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z">
+                    </path>
+                </svg>
+                <svg class="flower__leaf flower__leaf--default" height="22" viewbox="0 0 14 22" width="14">
+                    <path
+                        d="M6.673 20.87c.666.636 1.506 1.234 1.506 1.234S-.743 18.956.21 9.924C.618 6.084 2.896 2.79 6.875.12c.487-.327 1.143-.293 1.61.083.2.163 4.868 3.988 5.336 9.796.303 3.745-1.2 7.388-4.462 10.826l-1.353-1.26s-.286-.205-.348-.514l-.182-.01c-3.757-7.04.43-13.195.43-13.195-1.402 5.468.184 9.927.98 12.022 3.055-3.832 4.7-10.286-1.022-16.197-6.13 3.16-9.006 11.954-1.19 19.196z">
+                    </path>
+                </svg>
+            </div>
         </div>
     </div>
     <!-- Navigation bar -->
     {% include 'partials/_navbar.html' %}
 
-    {% block content %}        {% endblock %}
-    
+    {% block content %} {% endblock %}
+
     <!-- Footer -->
     {% include 'partials/_footer.html' %}
-    
+
     <!--script start-->
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
@@ -64,6 +90,6 @@
     <script src="{% static 'js/wow.min.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
     <!--script end-->
-	<h1>Hello MF</h1>
 </body>
+
 </html>
