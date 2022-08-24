@@ -72,7 +72,6 @@
                                     <ul class="sub-menu">
                                         <li><a href="{% url 'shop' %}">Shop</a></li>
                                         <li><a href="{% url 'shop_single' %}">Shop Single</a></li>
-                                        <li><a href="checkout.html">checkout</a></li>
                                     </ul>
                                 </li>
                                 <!--<li><a href="#">blog
@@ -169,7 +168,8 @@
                                 <ul class="hb_cart">
                                     <li>
                                         <div class="hb_left">
-                                            <a href="#"><img src="images/cart_popup1.jpg" alt="herbal-pure-cart"></a>
+                                            <a href="#"><img src="{% static 'img/cart_popup2.jpg' %}"
+                                                    alt="herbal-pure-cart"></a>
                                         </div>
                                         <div class="hb_right">
                                             <h3><a href="shop_single.html">Loose Leaf</a></h3>
@@ -178,7 +178,8 @@
                                     </li>
                                     <li>
                                         <div class="hb_left">
-                                            <a href="#"><img src="images/cart_popup2.jpg" alt="herbal-pure-cart-2"></a>
+                                            <a href="#"><img src="{% static 'img/cart_popup1.jpg' %}"
+                                                    alt="herbal-pure-cart-2"></a>
                                         </div>
                                         <div class="hb_right">
                                             <h3><a href="shop_single.html">Black Organic </a></h3>
