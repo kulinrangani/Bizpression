@@ -8,6 +8,8 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('shop/', include('shop.urls')),
     path('contact/', include('contacts.urls')),
+    # path('contact/', include('contacts.urls')),
+
     # path('accounts/',include('accounts.urls')),
     path('admin/', admin.site.urls),
 ]
