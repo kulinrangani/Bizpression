@@ -846,13 +846,13 @@ li.hb_border_right:after {
 /*------submenu end-------*/
 /*--------main slider start-------*/
 .hb_slider_wrapper {
-    background-image: url("{% static 'img/rewnew.jpg' %}");
+    /* background-image: url("{% static 'img/rewnew.jpg' %}"); */
 	background-size: cover;
     background-repeat: no-repeat;
 	padding: 151px 150px 503px;
 }
 .hb_slider_wrapper02 {
-    background-image: url("{% static 'img/rewnew.jpg' %}");
+    /* background-image: url("{% static 'img/rewnew.jpg' %}"); */
 	background-size: cover;
     background-repeat: no-repeat;
 	padding: 151px 150px 503px;
