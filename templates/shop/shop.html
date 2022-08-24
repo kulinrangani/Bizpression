@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content%}
+{% load static %}
+
 <div class="hb_breadcrumbs_wrapper">
 	<div class="hb_overlay"></div>
 	<div class="container">
@@ -19,68 +21,79 @@
 </div>
 <div class="hb_white_wrapper hb_shop hb_bottompadder42">
 	<div class="container">
-		
+
 		<div class="row">
 			<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 ">
 				<div class="row">
 					<div class="col-md-12">
-					<div class="hb_shoppage wow fadeInLeft">
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 padding_left">
-							<div class="hb_shop_view">
-								<ul>
-									<li>view By  </li>
-									<li><a href="#" id="list"><i class="flaticon-signs"></i></a></li>
-									<li class="active"><a href="#" id="grid"><i class="flaticon-squares"></i></a></li>
-								</ul>
+						<div class="hb_shoppage wow fadeInLeft">
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 padding_left">
+								<div class="hb_shop_view">
+									<ul>
+										<li>view By </li>
+										<li><a href="#" id="list"><i class="flaticon-signs"></i></a></li>
+										<li class="active"><a href="#" id="grid"><i class="flaticon-squares"></i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="hb_sorting">
+									<select class="hb_select">
+										<option value="0">Default Sorting </option>
+										<option value="1">Ascending</option>
+										<option value="2">descending</option>
+									</select>
+								</div>
+								<div class="clear"></div>
 							</div>
-							<div class="hb_sorting">
-								<select class="hb_select">
-									<option value="0">Default Sorting </option>
-									<option value="1">Ascending</option>
-									<option value="2">descending</option>
-								</select>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 padding_left">
+								<div class="hb_showing_product">
+									<p>Showing 1-9 of 40 Results</p>
+								</div>
 							</div>
-							<div class="clear"></div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 padding_left">
-							<div class="hb_showing_product">
-								<p>Showing 1-9 of 40 Results</p>
-							</div>
-						</div>
-					</div>
 					</div>
 					<div id="products" class="list-group">
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
 							<div class="hb_product_div wow fadeInUp">
 								<div class="hb_product_img">
-									<img src="images/product1.jpg" class="img-responsive" alt="image">
+									<img src="{% static 'img/product1.jpg' %}" class="img-responsive" alt="image">
 									<div class="product-image-overlay">
 										<ul class="cart_icons">
 											<li>
-												<a href="cart.html"><span><i class="flaticon-empty-shopping-cart"></i></span>Add to cart</a>
+												<a href="cart.html"><span><i
+															class="flaticon-empty-shopping-cart"></i></span>Add to
+													cart</a>
 											</li>
 											<li>
-												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span> Add to Wishlist  </a>
+												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span>
+													Add to Wishlist </a>
 											</li>
 											<li>
-												<a href="images/product_big1.jpg" class="zoom_icon"><span><i class="flaticon-search"></i> </span> Quick View </a>
+												<a href="images/product_big1.jpg" class="zoom_icon"><span><i
+															class="flaticon-search"></i> </span> Quick View </a>
 											</li>
 										</ul>
 									</div>
 									<div class="hb_img_overlay"></div>
 									<div class="hb_overlay_icon">
-										<a href="images/product_big1.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
+										<a href="images/product_big1.jpg" class="zoom_icon"><i
+												class="flaticon-search-2"></i></a>
 									</div>
 								</div>
 								<div class="hb_product_data">
 									<h5><a href="shop_single.html">Black Organic Tea</a></h5>
 									<p><del>$15</del> $12</p>
 									<div class="hb_product_detail">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat
+											diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel
+											dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce
+											blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
 									</div>
 									<div class="hb_product_btn">
-										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i> add to cart </a>
-										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to whishlist </a>
+										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i>
+											add to cart </a>
+										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to
+											whishlist </a>
 									</div>
 								</div>
 							</div>
@@ -88,34 +101,44 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
 							<div class="hb_product_div wow fadeInUp">
 								<div class="hb_product_img">
-									<img src="images/product2.jpg" class="img-responsive" alt="image">
+									<img src="{% static 'img/product2.jpg' %}" class="img-responsive" alt="image">
 									<div class="product-image-overlay">
 										<ul class="cart_icons">
 											<li>
-												<a href="cart.html"><span><i class="flaticon-empty-shopping-cart"></i></span>Add to cart</a>
+												<a href="cart.html"><span><i
+															class="flaticon-empty-shopping-cart"></i></span>Add to
+													cart</a>
 											</li>
 											<li>
-												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span> Add to Wishlist  </a>
+												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span>
+													Add to Wishlist </a>
 											</li>
 											<li>
-												<a href="images/product_big2.jpg" class="zoom_icon"><span><i class="flaticon-search"></i> </span> Quick View </a>
+												<a href="images/product_big2.jpg" class="zoom_icon"><span><i
+															class="flaticon-search"></i> </span> Quick View </a>
 											</li>
 										</ul>
 									</div>
 									<div class="hb_img_overlay"></div>
 									<div class="hb_overlay_icon">
-										<a href="images/product_big2.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
+										<a href="images/product_big2.jpg" class="zoom_icon"><i
+												class="flaticon-search-2"></i></a>
 									</div>
 								</div>
 								<div class="hb_product_data">
 									<h5><a href="shop_single.html">Loose Leaf Tea</a></h5>
 									<p><del>$15</del> $12</p>
 									<div class="hb_product_detail">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat
+											diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel
+											dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce
+											blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
 									</div>
 									<div class="hb_product_btn">
-										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i> add to cart </a>
-										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to whishlist </a>
+										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i>
+											add to cart </a>
+										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to
+											whishlist </a>
 									</div>
 								</div>
 							</div>
@@ -123,34 +146,44 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
 							<div class="hb_product_div wow fadeInUp">
 								<div class="hb_product_img">
-									<img src="images/product3.jpg" class="img-responsive" alt="image">
+									<img src="{% static 'img/product3.jpg' %}" class="img-responsive" alt="image">
 									<div class="product-image-overlay">
 										<ul class="cart_icons">
 											<li>
-												<a href="cart.html"><span><i class="flaticon-empty-shopping-cart"></i></span>Add to cart</a>
+												<a href="cart.html"><span><i
+															class="flaticon-empty-shopping-cart"></i></span>Add to
+													cart</a>
 											</li>
 											<li>
-												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span> Add to Wishlist  </a>
+												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span>
+													Add to Wishlist </a>
 											</li>
 											<li>
-												<a href="images/product_big3.jpg" class="zoom_icon"><span><i class="flaticon-search"></i> </span> Quick View </a>
+												<a href="images/product_big3.jpg" class="zoom_icon"><span><i
+															class="flaticon-search"></i> </span> Quick View </a>
 											</li>
 										</ul>
 									</div>
 									<div class="hb_img_overlay"></div>
 									<div class="hb_overlay_icon">
-										<a href="images/product_big3.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
+										<a href="images/product_big3.jpg" class="zoom_icon"><i
+												class="flaticon-search-2"></i></a>
 									</div>
 								</div>
 								<div class="hb_product_data">
 									<h5><a href="shop_single.html">Oolong tea</a></h5>
 									<p><del>$15</del> $12</p>
 									<div class="hb_product_detail">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat
+											diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel
+											dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce
+											blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
 									</div>
 									<div class="hb_product_btn">
-										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i> add to cart </a>
-										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to whishlist </a>
+										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i>
+											add to cart </a>
+										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to
+											whishlist </a>
 									</div>
 								</div>
 							</div>
@@ -158,34 +191,44 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
 							<div class="hb_product_div wow fadeInUp">
 								<div class="hb_product_img">
-									<img src="images/product4.jpg" class="img-responsive" alt="image">
+									<img src="{% static 'img/product4.jpg' %}" class="img-responsive" alt="image">
 									<div class="product-image-overlay">
 										<ul class="cart_icons">
 											<li>
-												<a href="cart.html"><span><i class="flaticon-empty-shopping-cart"></i></span>Add to cart</a>
+												<a href="cart.html"><span><i
+															class="flaticon-empty-shopping-cart"></i></span>Add to
+													cart</a>
 											</li>
 											<li>
-												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span> Add to Wishlist  </a>
+												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span>
+													Add to Wishlist </a>
 											</li>
 											<li>
-												<a href="images/product_big4.jpg" class="zoom_icon"><span><i class="flaticon-search"></i> </span> Quick View </a>
+												<a href="images/product_big4.jpg" class="zoom_icon"><span><i
+															class="flaticon-search"></i> </span> Quick View </a>
 											</li>
 										</ul>
 									</div>
 									<div class="hb_img_overlay"></div>
 									<div class="hb_overlay_icon">
-										<a href="images/product_big4.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
+										<a href="images/product_big4.jpg" class="zoom_icon"><i
+												class="flaticon-search-2"></i></a>
 									</div>
 								</div>
 								<div class="hb_product_data">
 									<h5><a href="shop_single.html">Green Tea</a></h5>
 									<p><del>$15</del> $12</p>
 									<div class="hb_product_detail">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat
+											diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel
+											dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce
+											blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
 									</div>
 									<div class="hb_product_btn">
-										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i> add to cart </a>
-										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to whishlist </a>
+										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i>
+											add to cart </a>
+										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to
+											whishlist </a>
 									</div>
 								</div>
 							</div>
@@ -193,34 +236,44 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
 							<div class="hb_product_div wow fadeInUp">
 								<div class="hb_product_img">
-									<img src="images/product5.jpg" class="img-responsive" alt="image">
+									<img src="{% static 'img/product5.jpg' %}" class="img-responsive" alt="image">
 									<div class="product-image-overlay">
 										<ul class="cart_icons">
 											<li>
-												<a href="cart.html"><span><i class="flaticon-empty-shopping-cart"></i></span>Add to cart</a>
+												<a href="cart.html"><span><i
+															class="flaticon-empty-shopping-cart"></i></span>Add to
+													cart</a>
 											</li>
 											<li>
-												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span> Add to Wishlist  </a>
+												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span>
+													Add to Wishlist </a>
 											</li>
 											<li>
-												<a href="images/product_big5.jpg" class="zoom_icon"><span><i class="flaticon-search"></i> </span> Quick View </a>
+												<a href="images/product_big5.jpg" class="zoom_icon"><span><i
+															class="flaticon-search"></i> </span> Quick View </a>
 											</li>
 										</ul>
 									</div>
 									<div class="hb_img_overlay"></div>
 									<div class="hb_overlay_icon">
-										<a href="images/product_big5.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
+										<a href="images/product_big5.jpg" class="zoom_icon"><i
+												class="flaticon-search-2"></i></a>
 									</div>
 								</div>
 								<div class="hb_product_data">
 									<h5><a href="shop_single.html">Sencha Tea</a></h5>
 									<p><del>$15</del> $12</p>
 									<div class="hb_product_detail">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat
+											diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel
+											dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce
+											blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
 									</div>
 									<div class="hb_product_btn">
-										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i> add to cart </a>
-										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to whishlist </a>
+										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i>
+											add to cart </a>
+										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to
+											whishlist </a>
 									</div>
 								</div>
 							</div>
@@ -228,34 +281,44 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
 							<div class="hb_product_div wow fadeInUp">
 								<div class="hb_product_img">
-									<img src="images/product6.jpg" class="img-responsive" alt="image">
+									<img src="{% static 'img/product6.jpg' %}" class="img-responsive" alt="image">
 									<div class="product-image-overlay">
 										<ul class="cart_icons">
 											<li>
-												<a href="cart.html"><span><i class="flaticon-empty-shopping-cart"></i></span>Add to cart</a>
+												<a href="cart.html"><span><i
+															class="flaticon-empty-shopping-cart"></i></span>Add to
+													cart</a>
 											</li>
 											<li>
-												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span> Add to Wishlist  </a>
+												<a href="#"><span><i class="flaticon-favorite-heart-button"></i> </span>
+													Add to Wishlist </a>
 											</li>
 											<li>
-												<a href="images/product_big6.jpg" class="zoom_icon"><span><i class="flaticon-search"></i> </span> Quick View </a>
+												<a href="images/product_big6.jpg" class="zoom_icon"><span><i
+															class="flaticon-search"></i> </span> Quick View </a>
 											</li>
 										</ul>
 									</div>
 									<div class="hb_img_overlay"></div>
 									<div class="hb_overlay_icon">
-										<a href="images/product_big6.jpg" class="zoom_icon"><i class="flaticon-search-2"></i></a>
+										<a href="images/product_big6.jpg" class="zoom_icon"><i
+												class="flaticon-search-2"></i></a>
 									</div>
 								</div>
 								<div class="hb_product_data">
 									<h5><a href="shop_single.html">Keemun Tea</a></h5>
 									<p><del>$15</del> $12</p>
 									<div class="hb_product_detail">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec efficitur erat
+											diam, non iaculis ex dictum ut. Aenean sit amet odio nisi. Vestibulum vel
+											dolor et justo sollicitudin tincidunt. Mauris eleifend elit metus. Fusce
+											blandit nulla at massa venenatis, sed tincidunt nisl tincidunt. </p>
 									</div>
 									<div class="hb_product_btn">
-										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i> add to cart </a>
-										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to whishlist </a>
+										<a href="cart.html" class="hb_btn"><i class="flaticon-empty-shopping-cart"></i>
+											add to cart </a>
+										<a href="#" class="hb_btn"><i class="flaticon-favorite-heart-button"></i> add to
+											whishlist </a>
 									</div>
 								</div>
 							</div>
@@ -330,7 +393,7 @@
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 </div>
